@@ -1,0 +1,13 @@
+Collection Methods:                   | Keterangan:
+================================================================================
+db.getCollectionNames()               | Mengambil semua nama Collection
+db.createCollection(name)             | Membuat Collection baru 
+db.getCollection(name)                | Mendapatkan object Collection
+db.<name>                             | Sama dengan db.getCollection(<name>)
+db.getCollectionInfos()               | Mendapatkan informasi semua Collection
+================================================================================
+db.<collection>.find()                | Mengambil semua Document
+db.<collection>.count()               | Mengambil jumlah Document
+db.<collection>.drop()                | Menghapus Collection
+db.<collection>.totalSize()           | Mengambil total ukuran Collection
+db.<collection>.stats()               | Mengambil informasi status Collection

@@ -1,0 +1,7 @@
+Database Methods                | Keterangan
+==========================================================================
+db.dropDatabase()               | Menghapus isi Database
+db.getName()                    | Mengambil nama Database
+db.hostInfo()                   | Mengambil informasi host tempat mongodb
+db.version()                    | Mengambil versi Database
+db.stats()                      | Mengambil statistik penggunaan Database

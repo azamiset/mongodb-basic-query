@@ -1,0 +1,16 @@
+QUERY MODIFIER
+
+- Query Modifier adalah memodifikasi hasil query yang telah kita lakukan.
+- Contoh yang sering kita lakukan seperti, mengubah query menjadi jumlah data, membatasi jumlah data dengan paging, dll.
+- Untuk memodifikasi hasil query, kita bisa menambahkan function qquery modifier setelah menggunakan function find.
+
+
+QUERY MODIFIER FUNCTION 
+
+Operator:   | Keterangan;
+================================================================================
+count()     | Mengambil jumlah data hasil query
+limit(size) | Membatatasi jumlah data yang didapat dari query
+skip(size)  | Menghiraukan data pertama hasil query sejumlah yang ditentukan
+sort(query) | Mengurutkan hasil data query
+================================================================================

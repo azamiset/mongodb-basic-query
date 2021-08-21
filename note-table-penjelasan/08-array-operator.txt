@@ -1,0 +1,7 @@
+ARRAY OPERATOR
+
+Operator:     | Keterangan;
+========================================================================================
+$all          | Mencocokan array yang mengandung elemen-elemen tertentu
+$elemMatch    | Mengambil document jika tiap element di array memenuhi kondisi tertentu
+$size         | Mengambil document jika ukuran array sesuai

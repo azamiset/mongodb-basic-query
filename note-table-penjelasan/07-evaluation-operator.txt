@@ -1,0 +1,10 @@
+EVALUATION OPERATOR
+
+Operator:     | Keterangan;
+=============================================================================
+$expr         | Menggunakan aggregation operation
+$jsonSchema   | Validasi document sesuai dengan JSON schema 
+$mod          | Melakukan operasi modulo
+$regex        | Mengambil document sesuai dengan regular expression (PCRE)
+$text         | Melakukan pencarian menggunakan text
+$where        | Mengambil document dengan javascript function

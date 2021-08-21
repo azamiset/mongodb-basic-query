@@ -1,0 +1,21 @@
+ARRAY UPDATE
+
+- secara default, saat kita mengubah field dengan type array, maka seluruh array akan diubah.
+- Kadang kita ingin menambahkan, atau hanya mengubah data array tanpa harus mengubah seluruh field arrya.
+- Hal ini bisa dilakukan di MongoDB.
+
+
+ARRAY UPDATE OPERATOR
+
+Opertor:        | Keterangan;
+=========================================================================
+$               | Mengupdate data array pertama sesuai kondisi query
+$[]             | Mengupdate semua data array sesuai kondisi query
+$[<identifier>] | Mengupdate semua data array yang sesuai kondisi arrayFiletrs
+<index>         | Mengupdate data array sesuai dengan nomor index
+==============================================================================
+$addToset       | Menambahkan value ke array, dihiraukan jika sudah ada
+$pop            | Menghapus element pertama (-1) atau terakhir (1) array
+$pull           | Menghapus semua element di array yang sesuai kondisi
+$push           | Menambahkan element ke array
+$pullAll        | Menghapus semua element di array
