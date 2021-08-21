@@ -8,14 +8,19 @@ ARRAY UPDATE
 ARRAY UPDATE OPERATOR
 
 Opertor:        | Keterangan;
-=========================================================================
+========================================================================================
 $               | Mengupdate data array pertama sesuai kondisi query
 $[]             | Mengupdate semua data array sesuai kondisi query
 $[<identifier>] | Mengupdate semua data array yang sesuai kondisi arrayFiletrs
 <index>         | Mengupdate data array sesuai dengan nomor index
-==============================================================================
-$addToset       | Menambahkan value ke array, dihiraukan jika sudah ada
+========================================================================================
+$addToSet       | Menambahkan value ke array, dihiraukan jika sudah ada
 $pop            | Menghapus element pertama (-1) atau terakhir (1) array
 $pull           | Menghapus semua element di array yang sesuai kondisi
 $push           | Menambahkan element ke array
 $pullAll        | Menghapus semua element di array
+========================================================================================
+$each           | Digunakan di $addToSet dan $push, untuk menambahkan multiple element
+$position       | Digunakan di $push untuk mengubah posisi menambahkan data
+$slice          | Digunakan di $push untuk menentukan jumlah maksimal data array
+$sort           | Digunakan untuk mengurutkan array setelah operasi $push
