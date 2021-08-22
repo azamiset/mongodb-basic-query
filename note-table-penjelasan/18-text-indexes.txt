@@ -1,0 +1,3 @@
+TEXT INDEXES
+- MongoDB menyediakan text index untuk mendukung pencarian text di tipe data string.
+- Text index tidak hanya bisa digunakan pada field dengan tipe data string, namun juga pada array berisi tipe data string

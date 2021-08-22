@@ -1,0 +1,10 @@
+DELETE DOCUMENT
+
+- MongoDB memiliki function yang bisa kita gunakan untuk menghapus document di collection secara permanen.
+- Document yang sudah kita hapus, tidak akan bisa dikembalikan lagi.
+----------------------------------------------------------------------------------------------------------
+
+function:                         | Keterangan;
+============================================================================================
+db.<collection>.deleteOne(query)  | Menghapus satu document yang sesuai dengan kondisi query
+db.<collection>.deleteMany(query) | Menghapus banyak document yang sesuai dengan kondisi query

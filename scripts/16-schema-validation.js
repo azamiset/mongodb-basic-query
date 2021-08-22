@@ -54,7 +54,7 @@ db.merchants.insertOne({
     }
 })
 
-// Inser Invalid document: Name is blank
+// Inser Invalid document: Name is blank (error)
 db.merchants.insertOne({
     _id: "toko2",
     balance: new NumberLong(1000000),
@@ -66,7 +66,7 @@ db.merchants.insertOne({
     }
 })
 
-// Inser Invalid document: Address City is blank
+// Inser Invalid document: Address City is blank (error)
 db.merchants.insertOne({
     _id: "toko2",
     name: "Toko Dua",
@@ -94,4 +94,10 @@ db.runCommand({
             }
         }
     }
+})
+
+// Insert Invalid document: fieldnya harus "full_name" (error)
+db.customers.insertOne({
+    _id: "salah",
+    name: "salah"
 })

@@ -1,0 +1,26 @@
+BULK WRITE OPERATION
+
+- Komunikasi antara aplikasi dengan database biasanya dilakukan secara request-response
+- Artinya tiap perintah yang ingin kita kirimkan darimaplikasi ke database, akan diresponse secara langsung oleh database
+- Proses tersebut akan sangat lambat, jika kitamenghadapi kasus harus memanipulasi data besar secara langsung. misal upload data dari file dengan jumlah jutaan kedalam database.
+- MongoDB mendukung Bulk Write Operation, yaitu operasi Bulk yang dalam satu requets. kita bisa mengirim banyak perintah.
+- Fitur ini cocok pada kasus jika kita ingin melakukan operasi Bulk atau Batch secara banyak sekaligus.
+-------------------------------------------------------------------------------------------------------
+
+Function:                       | Keterangan;
+==================================================================================
+db.<collection>.insertMany()    | Insert document secara banyak sekaligus
+db.<collection>.updateMany()    | Update document secara banyak sekaligus
+db.<collection>.deleteMany()    | Delete document secara banyak sekaligus
+db.<collection>.bulkWrite()     | Melakukan operasi write (insert, update, delete) banyak secara sekaligus
+----------------------------------------------------------------------------------------------------------
+
+Supported Bulk Write Operation
+
+- insertOne
+- updateOne
+- updateMany
+- replaceOne
+- deleteOne
+- deleteMany
+-------------------------------

@@ -1,0 +1,14 @@
+SCHEMA VALIDATION
+
+- Pada Relational DB, kita biasanya menambahkan constraint terhadap data yang ada di tabel
+- Misal, maksimal karakter, Enum string, Not Null, dll.
+- Di MongoDB, fitur untuk validasi data lebih canggih dibanding constraint di Relational DB
+- MongoDB mendukung Schema Validation menggunakan JSON Schema 
+-------------------------------------------------------------
+
+JSON Schema
+
+- JSON Schema adalah standar resmi untuk memvalidasi data JSON
+- Dengan menggunakn JSON Schema, kita bisa memberikan batasan, data JSON apa yang validasi
+- http://json-schema.org/
+------------------------------------------------------------------------------------------

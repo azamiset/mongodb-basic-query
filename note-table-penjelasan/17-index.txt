@@ -1,0 +1,7 @@
+CREATE INDEX FUNCTION
+
+Function:                       | Keterangan;
+===============================================================================================
+db.<collection>.createIndex()   | Membuat index di collection
+db.<collection>.getIndexs()     | Melihat semua index di collection
+db.<collection>.dropIndex()     | Menghapus index di collection
